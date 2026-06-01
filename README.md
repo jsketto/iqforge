@@ -20,7 +20,7 @@ Next.js 15 + TypeScript + Tailwind + shadcn/ui setup
 Wallet connection (Phantom, Solflare, etc.)
 Basic project structure and routing
 
-Phase 2: Drag & Drop Editor (In Progress)
+Phase 2: Drag & Drop Editor (Completed)
 
 Visual canvas with live preview
 Component library (Hero, Text, Image, Button, etc.)
