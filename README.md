@@ -2,71 +2,81 @@
 
 **The Squarespace for the Solana Internet**
 
-No-code drag & drop builder that creates fully onchain websites tied to SNS (.sol) domains.
+No-code website builder that creates beautiful, fully onchain websites tied to your SNS (.sol) domains.
 
-Built for IQLabs Official.
+Built for **IQLabs Official** in partnership with **SNS**.
 
-## Features
-- Wallet Connect (Phantom, Solflare, etc.)
-- Drag & Drop Website Editor
-- Publish directly to IPFS + SNS domain
-- AI-powered section generation
-- Beautiful templates (NFT projects, personal sites, dApps, etc.)
+---
 
-## Roadmap
-Phase 1: Foundation (Completed)
+### Features
 
-Next.js 15 + TypeScript + Tailwind + shadcn/ui setup
-Wallet connection (Phantom, Solflare, etc.)
-Basic project structure and routing
+- **Wallet Connect** — Phantom, Solflare, and other Solana wallets
+- **Template Gallery** — 18 professionally designed templates
+- **Easy Customizer** — Modify text, images, backgrounds, and colors
+- **SNS Integration** — Connect existing .sol domains or register new ones
+- **One-Click Publish** — Store site permanently on Solana via IQLabs + update SNS record
+- **Eternal Websites** — Truly decentralized, censorship-resistant, and permanent
 
-Phase 2: Drag & Drop Editor (Completed)
+---
 
-Visual canvas with live preview
-Component library (Hero, Text, Image, Button, etc.)
-Properties panel for editing
-Drag & drop reordering using @dnd-kit
+### 🚀 Roadmap
 
-Phase 3: SNS + IQLabs Integration (Next)
+#### Phase 1: Foundation (Completed)
+- Next.js 15 + TypeScript + Tailwind + shadcn/ui
+- Wallet connection
+- Clean project structure and routing
+- IQLabs neon-green / near-black theming
 
-SNS domain selection and management
-IQLabs SDK integration for onchain storage (codeIn)
-Publish flow: Build → Store on Solana via IQLabs → Update SNS record
-IPFS as optional fallback
+#### Phase 2: Template System (In Progress)
+- 18 high-quality templates
+- Template Gallery page
+- Template Customizer (text, images, background, colors)
+- Live preview while editing
 
-Phase 4: AI Assistant
+#### Phase 3: SNS + IQLabs Integration (Next)
+- Display user's .sol domains
+- Register new SNS domains if needed
+- Publish flow: IQLabs onchain storage (`codeIn`) → Update SNS record
+- IPFS/Arweave as optional fallback
 
-AI-powered section generation
-"Describe your site" → auto layout
-Smart content suggestions
+#### Phase 4: Polish & MVP Launch
+- User dashboard ("My Sites")
+- Mobile-responsive templates
+- Basic SEO & metadata settings
+- Publish success page with shareable link
 
-Phase 5: Polish & Launch
+#### Phase 5: AI Assistant & Enhancements
+- AI-powered content & section generation
+- Smart template suggestions
+- Advanced customization options
 
-Template gallery
-Responsive design tools
-Analytics & SEO settings
-User dashboard (My Sites)
-Custom domain support
-Mobile editor experience
+#### Future (Post-MVP)
+- Full drag & drop editor
+- Team collaboration
+- Template marketplace
+- Analytics
+- Advanced Web3 components (NFT galleries, token widgets, payment buttons)
+- Multi-chain support
 
-Future (Post-MVP)
+---
 
-Team collaboration on sites
-Marketplace for premium templates
-Advanced components (NFT galleries, token widgets, payment buttons)
-Multi-chain support
+### Tech Stack
 
-## Tech Stack
-- Next.js 15 (App Router)
-- TypeScript
-- Tailwind + shadcn/ui
-- Solana Web3.js + SNS SDK
-- IPFS / Arweave
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS + shadcn/ui**
+- **Solana Wallet Adapter**
+- **SNS SDK** (Solana Name Service)
+- **IQLabs SDK** (primary onchain storage)
+- Framer Motion (animations)
 
-## Quick Start
+---
+
+### Quick Start
 
 ```bash
-git clone https://github.com/yourusername/iqforge.git
+git clone https://github.com/jsketto/iqforge.git
 cd iqforge
-npm install
+npm install --legacy-peer-deps
+cp .env.local.example .env.local
 npm run dev
